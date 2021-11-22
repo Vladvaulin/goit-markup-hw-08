@@ -1,6 +1,11 @@
 .advantages {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width:767px) {
+    display: flex;
+    flex-direction: column;
+    
+  }
 }
 
 .advantages-item {

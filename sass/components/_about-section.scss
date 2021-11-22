@@ -1,5 +1,6 @@
 .section-about {
   padding-top: 0;
+  
   &__text {
     font-weight: 700;
     font-size: 36px;
@@ -9,7 +10,10 @@
     margin: 0;
     margin-bottom: 50px;
   }
-  
+  @media screen and (max-width: 767px) {
+    display: none;
+   
+  }
 }
 
 .about-list {
