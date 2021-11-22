@@ -1,0 +1,29 @@
+
+h1,
+h2,
+h3,
+li,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+ul[class] {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,51 @@
+.header-contact {
+  display: flex;
+  margin-left: auto;
+  height: auto;
+  &__link {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--hover-color);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-contact {
+    display: none;
+  }
+}
+
+ .header-contact__phone-svg {
+  width: 10px;
+  height: 16px;
+  margin-left: 30px;
+  fill: #757575;
+  margin-right: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .header-contact__link:hover &,
+  .header-contact__link:focus & {
+    fill: var(--hover-color);
+  }
+}
+.header-contact__svg {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .header-contact__link:hover &,
+  .header-contact__link:focus & {
+    fill: var(--hover-color);
+    color: #2196f3;
+  }
+}

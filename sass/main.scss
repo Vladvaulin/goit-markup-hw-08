@@ -1,0 +1,25 @@
+@import "./base/base";
+@import "./utils/visually-hidden";
+
+@import "./utils/variables";
+@import "./components/global/container";
+@import "./components/global/section";
+
+@import "./components/page-header/header";
+@import "./components/page-header/company-name";
+@import "./components/page-header/header-list";
+@import "./components/page-header/header-contact";
+@import "./components/hero";
+@import "./components/advantages";
+@import "./components/about-section";
+@import "./components/team-section/team-section";
+@import "./components/team-section/social-link";
+@import "./components/clients";
+@import "./components/page-footer/footer-container";
+@import "./components/page-footer/company-name";
+@import "./components/page-footer/footer-contacts";
+@import "./components/page-footer/footer-links";
+@import "./components/page-footer/footer-form";
+@import "./components/modal";
+@import "./portfolio/components/button-list";
+@import "./portfolio/components/card-set";
