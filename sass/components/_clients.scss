@@ -4,8 +4,19 @@
   &__item {
     width: 170px;
     height: 92px;
+    @media screen and (max-width: 767px) {
+      width: 210px;
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
   }
 }
+
 
 .clients-list__icon {
   width: 106px;
