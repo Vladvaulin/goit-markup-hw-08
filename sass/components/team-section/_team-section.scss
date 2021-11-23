@@ -1,5 +1,6 @@
 .team-section {
   background-color: var(--button-list-color);
+
   &__text {
     font-weight: 700;
     font-size: 36px;
@@ -26,30 +27,6 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .team-list__item {
-    width: 450px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .team-list__item:last-child {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .team-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
 .team-worker {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -71,5 +48,23 @@
     letter-spacing: 0.03em;
 
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__item {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
