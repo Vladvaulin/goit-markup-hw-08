@@ -40,3 +40,27 @@
     border-radius: 4px;
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .button-list {
+    margin-bottom: 14px;
+    &__item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      margin-right: 8px;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,7 +1,12 @@
 .footer-networks {
   margin-left: 70px;
   margin-right: 93px;
+
   &__text {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+    }
     font-weight: 700;
     font-size: 14px;
     line-height: 1.3;
@@ -44,5 +49,26 @@
   &:hover,
   &:focus {
     background-color: var(--hover-color);
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-networks {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-networks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-left: 0;
+    margin-right: 0;
+    &__text {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

@@ -70,3 +70,38 @@
     color: var(--second-text-color);
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    &__item {
+      margin: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .card-set {
+    width: 450px;
+  }
+  .card-set-text {
+    width: 450px;
+  }
+}
