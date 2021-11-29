@@ -79,6 +79,7 @@
     grid-row-gap: 30px;
     &__item {
       margin: 0;
+      width: 100%;
       &:last-child {
         margin-bottom: 0;
       }
@@ -93,6 +94,7 @@
 
     &__item {
       margin-bottom: 30px;
+      width: 100%;
       &:last-child {
         margin-bottom: 0;
       }

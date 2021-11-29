@@ -189,12 +189,22 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+  .modal-form__policy {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .modal {
     min-width: 450px;
     min-height: 609px;
   }
-  .modal-form__policy{
+  .modal-form__policy {
     font-size: 12px;
   }
 }

@@ -49,6 +49,12 @@
     display: flex;
    flex-direction: column;
     align-items: baseline;
+    &__list{
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
     
   }
   .header-contact__phone-svg {

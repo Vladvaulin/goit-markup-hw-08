@@ -62,6 +62,40 @@
             >
           </li>
         </ul>
+        <svg class="header-burger" width="40" height="40" data-menu-open>
+          <use href="./images/menu-buttons.svg#burger"></use>
+        </svg>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <!-- @ToDo: load close btn svg -->
+        <svg class="mobile-menu__close" width="40" height="40" data-menu-close>
+          <use href="./images/menu-buttons.svg#close-menu"></use>
+        </svg>
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__links">
+            <a class="mobile-menu__link" href="index.html">Студия</a>
+            <a class="mobile-menu__link" href="portfolio.html">Портфолио</a>
+            <a class="mobile-menu__link">Контакты</a>
+          </div>
+          <div class="mobile-menu__footer">
+            <a class="mobile-menu__phone" href="">+38 096 111 11 11</a>
+            <a class="mobile-menu__email" href="">info@devstudio.com</a>
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-list__item">
+                <a class="mobile-menu-list__link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu-list__item">
+                <a class="mobile-menu-list__link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu-list__item">
+                <a class="mobile-menu-list__link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu-list__item">
+                <a class="mobile-menu-list__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <section class="section">
@@ -90,13 +124,25 @@
           <li class="card-list__item">
             <a href="" class="card-list__link">
               <div class="card-set">
-                <img
-                  class="main-list-img"
-                  src="images/img (21) (1).jpg"
-                  alt="ноутбук"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images\card-set\card1-1x.jpg 1x,
+                      images\card-set\card1-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images\card-set\card-set-tablet\card-tablet1-1x.jpg 1x,
+                      images\card-set\card-set-tablet\card-tablet1-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <img src="images\card-set\card1.jpg" alt="card1" />
+                </picture>
                 <div class="card-text">
                   <p class="card-text__paragraph">
                     Технокряк это современная площадка распространения
@@ -115,12 +161,25 @@
           <li class="card-list__item">
             <a href="" class="card-list__link">
               <div class="card-set">
-                <img
-                  src="images/img (12) (1).jpg"
-                  alt="баскетбол"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images\card-set\card2-1x.jpg 1x,
+                      images\card-set\card2-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images\card-set\card-set-tablet\card-tablet2-1x.jpg 1x,
+                      images\card-set\card-set-tablet\card-tablet2-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <img src="images\card-set\card2.jpg" alt="card2" />
+                </picture>
                 <div class="card-text">
                   <p class="card-text__paragraph">
                     Технокряк это современная площадка распространения
@@ -130,7 +189,9 @@
                 </div>
               </div>
               <div class="card-set-text">
-                <h3 class="card-set-text__name">Постер New Orlean vs Golden Star</h3>
+                <h3 class="card-set-text__name">
+                  Постер New Orlean vs Golden Star
+                </h3>
                 <p class="card-set-text__discribe">Дизайн</p>
               </div>
             </a>
@@ -138,12 +199,25 @@
           <li class="card-list__item">
             <a href="" class="card-list__link">
               <div class="card-set">
-                <img
-                  src="images/img (13) (1).jpg"
-                  alt="ресторан"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images\card-set\card3-1x.jpg 1x,
+                      images\card-set\card3-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images\card-set\card-set-tablet\card-tablet3-1x.jpg 1x,
+                      images\card-set\card-set-tablet\card-tablet3-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <img src="images\card-set\card3.jpg" alt="card3" />
+                </picture>
                 <div class="card-text">
                   <p class="card-text__paragraph">
                     Технокряк это современная площадка распространения
@@ -161,12 +235,25 @@
           <li class="card-list__item">
             <a href="" class="card-list__link">
               <div class="card-set">
-                <img
-                  src="images/img (14) (1).jpg"
-                  alt="наушники"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images\card-set\card4-1x.jpg 1x,
+                      images\card-set\card4-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images\card-set\card-set-tablet\card-tablet4-1x.jpg 1x,
+                      images\card-set\card-set-tablet\card-tablet4-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <img src="images\card-set\card4.jpg" alt="card4" />
+                </picture>
                 <div class="card-text">
                   <p class="card-text__paragraph">
                     Технокряк это современная площадка распространения
@@ -176,7 +263,9 @@
                 </div>
               </div>
               <div class="card-set-text">
-                <h3 class="card-set-text__name">Проект <span lang="en">Prime</span></h3>
+                <h3 class="card-set-text__name">
+                  Проект <span lang="en">Prime</span>
+                </h3>
                 <p class="card-set-text__discribe">Маркетинг</p>
               </div>
             </a>
@@ -184,12 +273,25 @@
           <li class="card-list__item">
             <a href="" class="card-list__link">
               <div class="card-set">
-                <img
-                  src="images/img (15) (1).jpg"
-                  alt="коробки"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images\card-set\card5-1x.jpg 1x,
+                      images\card-set\card5-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images\card-set\card-set-tablet\card-tablet5-1x.jpg 1x,
+                      images\card-set\card-set-tablet\card-tablet5-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <img src="images\card-set\card5.jpg" alt="card5" />
+                </picture>
                 <div class="card-text">
                   <p class="card-text__paragraph">
                     Технокряк это современная площадка распространения
@@ -207,12 +309,25 @@
           <li class="card-list__item">
             <a href="" class="card-list__link">
               <div class="card-set">
-                <img
-                  src="images/img (16) (1).jpg"
-                  alt="монитор"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images\card-set\card6-1x.jpg 1x,
+                      images\card-set\card6-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images\card-set\card-set-tablet\card-tablet6-1x.jpg 1x,
+                      images\card-set\card-set-tablet\card-tablet6-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <img src="images\card-set\card6.jpg" alt="card6" />
+                </picture>
                 <div class="card-text">
                   <p class="card-text__paragraph">
                     Технокряк это современная площадка распространения
@@ -230,12 +345,25 @@
           <li class="card-list__item">
             <a href="" class="card-list__link">
               <div class="card-set">
-                <img
-                  src="images/img (17) (1).jpg"
-                  alt="книга"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images\card-set\card7-1x.jpg 1x,
+                      images\card-set\card7-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images\card-set\card-set-tablet\card-tablet7-1x.jpg 1x,
+                      images\card-set\card-set-tablet\card-tablet7-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <img src="images\card-set\card7.jpg" alt="card7" />
+                </picture>
                 <div class="card-text">
                   <p class="card-text__paragraph">
                     Технокряк это современная площадка распространения
@@ -255,12 +383,25 @@
           <li class="card-list__item">
             <a href="" class="card-list__link">
               <div class="card-set">
-                <img
-                  src="images/img (18) (1).jpg"
-                  alt="лэйбл"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images\card-set\card8-1x.jpg 1x,
+                      images\card-set\card8-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images\card-set\card-set-tablet\card-tablet8-1x.jpg 1x,
+                      images\card-set\card-set-tablet\card-tablet8-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <img src="images\card-set\card8.jpg" alt="card8" />
+                </picture>
                 <div class="card-text">
                   <p class="card-text__paragraph">
                     Технокряк это современная площадка распространения
@@ -278,12 +419,25 @@
           <li class="card-list__item">
             <a href="" class="card-list__link">
               <div class="card-set">
-                <img
-                  src="images/img (19) (1).jpg"
-                  alt="ноутбук"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images\card-set\card9-1x.jpg 1x,
+                      images\card-set\card9-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      images\card-set\card-set-tablet\card-tablet9-1x.jpg 1x,
+                      images\card-set\card-set-tablet\card-tablet9-2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                    media="(max-width: 1199px)"
+                  />
+                  <img src="images\card-set\card9.jpg" alt="card9" />
+                </picture>
                 <div class="card-text">
                   <p class="card-text__paragraph">
                     Технокряк это современная площадка распространения
@@ -304,7 +458,7 @@
 
     <footer class="footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-address">
           <a lang="en" class="company-name footer-company-name light" href="">
             <span>Web</span><span>Studio</span>
           </a>
@@ -360,7 +514,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-text-area">
           <h3 class="footer-networks__text">Подпишитесь на рассылку</h3>
           <form action="" class="footer-form">
             <input
@@ -382,6 +536,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
