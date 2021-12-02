@@ -434,7 +434,7 @@ body {
 @media screen and (max-width: 767px) {
   .hero-section {
     width: 100%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-phone.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-phone.jpg), url(/images/hero-2x.jpg);
   }
   .hero-section__title {
     display: flex;
