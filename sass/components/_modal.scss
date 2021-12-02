@@ -201,8 +201,10 @@
 
 @media screen and (max-width: 767px) {
   .modal {
-    min-width: 450px;
-    min-height: 609px;
+    min-width: 290px;
+    max-width: 450px;
+    width: calc(100% - 30px);
+    max-height: 609px;
   }
   .modal-form__policy {
     font-size: 12px;

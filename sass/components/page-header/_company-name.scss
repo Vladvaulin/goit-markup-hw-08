@@ -10,3 +10,9 @@
 .company-name > span:first-child {
   color: var(--hover-color);
 }
+
+@media screen and (max-width: 767px) {
+  .company-name {
+    margin-right: 0;
+  }
+}

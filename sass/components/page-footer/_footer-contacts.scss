@@ -15,7 +15,7 @@
     margin-bottom: 0;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and  (max-width: 1199px) {
   .footer-text-area {
     display: flex;
     flex-direction: column;
@@ -45,6 +45,9 @@
   }
 }
 @media screen and (max-width: 767px) {
+   .footer-text-area{
+     width: 100%;
+   }
   .address {
     display: flex;
     flex-direction: column;

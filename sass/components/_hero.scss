@@ -52,13 +52,17 @@
 
 @media screen and (max-width: 767px) {
   .hero-section {
+    width: 100%;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(/images/header-phone.jpg);
     &__title {
-      width: 360px;
+      display: flex;
+      max-width: 360px;
+      width: 100%;
+      min-width: 200px;
       flex-wrap: wrap;
       font-weight: 900;
       font-size: 26px;
