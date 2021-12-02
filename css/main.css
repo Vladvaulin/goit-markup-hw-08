@@ -1411,6 +1411,7 @@ body {
   }
   .card-list__item {
     margin: 0;
+    height: 100%;
     width: 100%;
   }
   .card-list__item:last-child {
