@@ -9,11 +9,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .header-list {
-    display: none;
-  }
-}
+
 
 .header-list__link {
   align-items: center;
@@ -47,5 +43,11 @@
     bottom: -32px;
     background: #2196f3;
     border-radius: 2px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
   }
 }

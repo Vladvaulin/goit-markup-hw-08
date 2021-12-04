@@ -58,7 +58,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/header-tablet.jpg), url(/images/header-tablet-2x.jpg);
+      url(./images/header-tablet.jpg), url(./images/header-tablet-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     &__title {
       font-weight: 900;
       font-size: 26px;
@@ -76,7 +79,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/header-phone.jpg), url(/images/header-phone-2x.jpg);
+      url(./images/header-phone.jpg), url(./images/header-phone-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     &__title {
       display: flex;
       max-width: 360px;

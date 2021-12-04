@@ -283,12 +283,6 @@ body {
   margin-right: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .header-list {
-    display: none;
-  }
-}
-
 .header-list__link {
   align-items: center;
   font-weight: 500;
@@ -323,6 +317,12 @@ body {
   bottom: -32px;
   background: #2196f3;
   border-radius: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
 }
 
 .header-contact {
@@ -451,7 +451,10 @@ body {
   .hero-section {
     height: 400px;
     width: 100%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-tablet.jpg), url(/images/header-tablet-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/header-tablet.jpg), url(./images/header-tablet-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .hero-section__title {
     font-weight: 900;
@@ -465,7 +468,10 @@ body {
 @media screen and (max-width: 767px) {
   .hero-section {
     width: 100%;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/header-phone.jpg), url(/images/header-phone-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/header-phone.jpg), url(./images/header-phone-2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .hero-section__title {
     display: flex;
