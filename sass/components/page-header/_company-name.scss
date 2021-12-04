@@ -11,6 +11,12 @@
   color: var(--hover-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .company-name {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .company-name {
     margin-right: 0;
