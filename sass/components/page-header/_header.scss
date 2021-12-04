@@ -72,6 +72,15 @@
   }
 }
 
+.mobile-menu__link--active {
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
 .mobile-menu__footer {
   display: flex;
   flex-direction: column;
@@ -120,16 +129,16 @@
 
 @media screen and (max-width: 767px) {
   .header {
-  height: 60px;
-  display: flex;
-  
-  border-bottom: 1px solid var(--header-border-color);
-  .container {
+    height: 60px;
     display: flex;
-    
-    align-items: center;
+
+    border-bottom: 1px solid var(--header-border-color);
+    .container {
+      display: flex;
+
+      align-items: center;
+    }
   }
-}
   .header-burger {
     display: block;
   }
@@ -142,4 +151,3 @@
     }
   }
 }
-
